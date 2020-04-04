@@ -16,42 +16,91 @@
   <title>Lattitude Web Design Project</title>
 
 </head>
+
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="../index.html">Lattitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <a class="nav-item active dropdown nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="temperture.html">Max Temperature</a>
-              <a class="dropdown-item" href="humidity.html">Humidity</a>
-              <a class="dropdown-item" href="cloud.html">Cloudiness</a>
-              <a class="dropdown-item" href="wind.html">Wind Speed</a>
-            </div>
-            <li class="nav-item">
-              <a class="nav-link" href="compare.html">
-                Comparison</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../data/table.html">
-                Data</a>
-            </li>
-          </ul>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="../index.html">Lattitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <a class="nav-item active dropdown nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+          <a class="dropdown-item" href="humidity.html">Humidity</a>
+          <a class="dropdown-item" href="cloud.html">Cloudiness</a>
+          <a class="dropdown-item" href="wind.html">Wind Speed</a>
         </div>
-      </nav>
+        <li class="nav-item">
+          <a class="nav-link" href="compare.html">
+            Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../data/table.html">
+            Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-      <br>
-      <br>
-      <br>
-    <h1>Hello, world!</h1>
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <h1>Comparison: Latitude vs. X</h1>
+    <br>
+    <p>Click any plot to get an in-depth analysis.</p>
+    <br>
+
+    <div class="row row-cols-sm-1 row-cols-md-2">
+      <div class="card text-white bg-info col mb-4">
+        <div class="card h-100">
+          <img src="../images/MaxTemp.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Max Temperature</h5> -->
+            <a href="temperature.html" class="btn btn-primary">See Analysis</a>
+          </div>
+        </div>
+      </div>
+      <div class="card text-white bg-info col mb-4">
+        <div class="card h-100">
+          <img src="../images/Humidity.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Humidity</h5> -->
+            <a href="humidity.html" class="btn btn-primary">See Analysis</a>
+          </div>
+        </div>
+      </div>
+      <div class="card text-white bg-info col mb-4">
+        <div class="card h-100">
+          <img src="../images/Cloudiness.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Cloudiness</h5> -->
+            <a href="cloud.html" class="btn btn-primary">See Analysis</a>
+          </div>
+        </div>
+      </div>
+      <div class="card text-white bg-info col mb-4">
+        <div class="card h-100">
+          <img src="../images/WindSpeed.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Wind</h5> -->
+            <a href="wind.html" class="btn btn-primary">See Analysis</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
