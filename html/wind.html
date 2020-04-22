@@ -3,6 +3,17 @@
 
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164268413-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-164268413-1');
+  </script>
+
+
   <!-- meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, inital-scale=1, shrink-to-fit=no">
@@ -16,58 +27,62 @@
   <title>Lattitude Web Design Project</title>
 
 </head>
+
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="../index.html">Lattitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <a class="nav-item active dropdown nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="temperature.html">Max Temperature</a>
-              <a class="dropdown-item" href="humidity.html">Humidity</a>
-              <a class="dropdown-item" href="cloud.html">Cloudiness</a>
-              <a class="dropdown-item" href="wind.html">Wind Speed</a>
-            </div>
-            <li class="nav-item">
-              <a class="nav-link" href="compare.html">
-                Comparison</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../data/table.html">
-                Data</a>
-            </li>
-          </ul>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="../index.html">Lattitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <a class="nav-item active dropdown nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+          <a class="dropdown-item" href="humidity.html">Humidity</a>
+          <a class="dropdown-item" href="cloud.html">Cloudiness</a>
+          <a class="dropdown-item" href="wind.html">Wind Speed</a>
         </div>
-      </nav>
+        <li class="nav-item">
+          <a class="nav-link" href="compare.html">
+            Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../data/table.html">
+            Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-      <div class="container">
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <h1 class="text-primary">Wind Speed</h1>
+    <div class="row row-cols-1">
+      <div class="text-center">
+        <img src="../images/WindSpeed.png" class="img-fluid" alt="...">
         <br>
-        <br>
-        <br>
-        <h1 class="text-primary">Wind Speed</h1>
-        <div class="row row-cols-1">
-          <div class="text-center">
-            <img src="../images/WindSpeed.png" class="img-fluid" alt="...">
-            <br>
-            <div class="text-left">
-              <p>Wind speeds are noticeably calm at 0 to 5 mph across most observations shown in the 80 to -20 degree lines
-                of latitude with peaks in wind speed at the 60 degree and -40 degree lines of latitude. Top
-                wind speeds are observed at 35 mph between 40 and 80 degree lines of latitude. A significant drop in wind speed
-                is also observed at 15 mph and less between the -20 to 0 degree lines of latitude. Natural events such as the global
-                polar and tropical jet streams could have had an impact on wind speed observations at the time this data was collected.
-              </p>
-            </div>
-          </div>
+        <div class="text-left">
+          <p>Wind speeds are noticeably calm at 0 to 5 mph across most observations shown in the 80 to -20 degree lines
+            of latitude with peaks in wind speed at the 60 degree and -40 degree lines of latitude. Top
+            wind speeds are observed at 35 mph between 40 and 80 degree lines of latitude. A significant drop in wind
+            speed
+            is also observed at 15 mph and less between the -20 to 0 degree lines of latitude. Natural events such as
+            the global
+            polar and tropical jet streams could have had an impact on wind speed observations at the time this data was
+            collected.
+          </p>
         </div>
       </div>
+    </div>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

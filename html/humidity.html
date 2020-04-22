@@ -3,6 +3,17 @@
 
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164268413-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-164268413-1');
+  </script>
+
+
   <!-- meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, inital-scale=1, shrink-to-fit=no">
@@ -16,59 +27,60 @@
   <title>Lattitude Web Design Project</title>
 
 </head>
+
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="../index.html">Lattitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <a class="nav-item active dropdown nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="temperature.html">Max Temperature</a>
-              <a class="dropdown-item" href="humidity.html">Humidity</a>
-              <a class="dropdown-item" href="cloud.html">Cloudiness</a>
-              <a class="dropdown-item" href="wind.html">Wind Speed</a>
-            </div>
-            <li class="nav-item">
-              <a class="nav-link" href="compare.html">
-                Comparison</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../data/table.html">
-                Data</a>
-            </li>
-          </ul>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="../index.html">Lattitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <a class="nav-item active dropdown nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+          <a class="dropdown-item" href="humidity.html">Humidity</a>
+          <a class="dropdown-item" href="cloud.html">Cloudiness</a>
+          <a class="dropdown-item" href="wind.html">Wind Speed</a>
         </div>
-      </nav>
+        <li class="nav-item">
+          <a class="nav-link" href="compare.html">
+            Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../data/table.html">
+            Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-      <div class="container">
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <h1 class="text-primary">Humidity</h1>
+    <div class="row row-cols-1">
+      <div class="text-center">
+        <img src="../images/Humidity.png" class="img-fluid" alt="...">
         <br>
-        <br>
-        <br>
-        <h1 class="text-primary">Humidity</h1>
-        <div class="row row-cols-1">
-          <div class="text-center">
-            <img src="../images/Humidity.png" class="img-fluid" alt="...">
-            <br>
-            <div class="text-left">
-              <p>Across the northern and southern hemispheres, between the latitude of -30 Deg and 60 Deg,
-                the hemispheres can regularly reach a percentage of 100% humidity. However, the data shows
-                that as one would approach the equator, they would experience dryer humidity at 20% 
-                between the equator and the 40th Deg latitude as well as between the between the -20 to -40th 
-                degress. This may be due to the persistent heat the equatorial region receives, leaving less
-                moisture for humidity.
-              </p>
-            </div>
-          </div>
+        <div class="text-left">
+          <p>Across the northern and southern hemispheres, between the latitude of -30 Deg and 60 Deg,
+            the hemispheres can regularly reach a percentage of 100% humidity. However, the data shows
+            that as one would approach the equator, they would experience dryer humidity at 20%
+            between the equator and the 40th Deg latitude as well as between the between the -20 to -40th
+            degress. This may be due to the persistent heat the equatorial region receives, leaving less
+            moisture for humidity.
+          </p>
         </div>
       </div>
+    </div>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
